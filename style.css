@@ -1,1 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 375px;
+  height: 667px;
+  padding-top: 106px;
+  padding-bottom: 80px;
+
+  font-family: Roboto;
+  background-color: #F3F3F3;
+  ;
+}
+
+.cabecalho {
+  height: 80px;
+  width: 375px;
+  background-color: #ffffff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.cabecalho ion-icon {
+  font-size: 35px;
+}
+
+.cabecalho img {
+  height: 53px;
+  width: 75px;
+}
+
+
+
+.mensagem {
+  background-color: #dcdcdc;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.mensagem span {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+}
+
+.mensagem span:nth-child(1) {
+  color: #aaaaaa;
+}
+
+.mensagem span:nth-child(2) {
+  font-weight: 700;
+}
+
+
+
+.rodape {
+  height: 80px;
+  width: 375px;
+  background-color: #ffffff;
+
+  padding-left: 17px;
+  padding-right: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.rodape input {
+  overflow-wrap: break-word;
+  width: 300px;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+
+.rodape input:focus {
+  outline: none;
+}
+
+.rodape ion-icon {
+  font-size: 28px;
+}
