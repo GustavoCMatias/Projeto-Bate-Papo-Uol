@@ -42,8 +42,8 @@ body {
 }
 
 .corpo {
-  padding-top: 85px;
-  padding-bottom: 85px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 
@@ -58,8 +58,13 @@ body {
   padding-bottom: 5px;
 
   margin-bottom: 4px;
+
 }
 
+.message div {
+  width: 100%;
+  overflow-wrap: break-word;
+}
 
 .mensagem span {
   font-family: Roboto;
