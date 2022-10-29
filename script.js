@@ -80,6 +80,21 @@ function ManterConexao() {
 
 function MandarMensagem() {
     const elemento = document.querySelector(".input-box");
+    const objeto = {
+        from: nome,
+        to: "Todos",
+        text: elemento.value,
+        type: "message"
+    }
+
+    const promessa = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', objeto)
+    elemento.value = "";
+    promessa.then(OutrosPuxarMensagens);
+    promessa.catch(Atualizarpagina);
+}
+
+function Atualizarpagina() {
+    window.location.reload();
 }
 
 
