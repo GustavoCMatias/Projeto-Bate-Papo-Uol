@@ -48,6 +48,8 @@ function PrimeiroCarregarMensagens(resposta) {
         const dados = resposta.data[i];
         CarregarMensagens(elemento, dados);
     }
+    const new_message = document.querySelectorAll(".mensagem");
+    new_message[new_message.length - 1].scrollIntoView();
     setInterval(OutrosPuxarMensagens, 3000)
 }
 
@@ -59,7 +61,6 @@ function OutrosPuxarMensagens() {
 function OutrosCarregarMensagens(resposta) {
     const elemento = document.querySelector(".corpo");
     let idx_ultimo = resposta.data.findIndex((dado) => dado.from === last_name && dado.time === last_message)
-    console.log(idx_ultimo);
     if (idx_ultimo === resposta.data.length - 1) {
         return idx_ultimo;
     } else if (idx_ultimo == -1) {
