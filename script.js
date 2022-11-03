@@ -13,21 +13,21 @@ function Botarnome() {
 function CarregarMensagens(elemento, dados) {
     if (dados.type == 'status') {
         elemento.innerHTML += `
-    <div class="mensagem ${dados.type}">
+    <div class="mensagem ${dados.type}" data-test="message">
     <div>
         <span>(${dados.time})</span> <span> ${dados.from} </span> <span>${dados.text}</span>
     </div>
     </div>`
     } else if (dados.type == 'message') {
         elemento.innerHTML += `
-    <div class="mensagem ${dados.type}">
+    <div class="mensagem ${dados.type}" data-test="message">
     <div>
         <span>(${dados.time})</span> <span> ${dados.from} </span><span>para</span><span> ${dados.to}: </span> <span>${dados.text}</span>
     </div>
     </div>`
     } else if (dados.to == nome) {
         elemento.innerHTML += `
-    <div class="mensagem ${dados.type}">
+    <div class="mensagem ${dados.type}" data-test="message">
     <div>
         <span>(${dados.time})</span> <span> ${dados.from} </span><span>reservadamente para</span><span> ${nome}: </span> <span>${dados.text}</span>
     </div>
